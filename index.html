@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>Discovery Ninja Warrior</title>
 
@@ -44,31 +41,39 @@
 
       <div class="row">
         <div class="col-xs-6">
-          <a href="#" class="thumbnail text-center launch-modal" data-modal-id="cliff-video">
-            <img src="video/cliffhanger.png">
-            <span class="textoverlay">Cliff Hanger</span>
-          </a>
+          <div align="center" class="thumbnail embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item">
+              <source src="video/cliffhanger.mp4" type="video/mp4">
+            </video>
+            <span class="textoverlay" style="left:200px;top:135px;">Cliff Hanger</span>
+          </div>
         </div>
         <div class="col-xs-6">
-          <a href="#" class="thumbnail text-center launch-modal" data-modal-id="floating-video">
-            <img src="video/floating.png">
-            <span class="textoverlay" style="left:25px;">Floating Boards</span>
-          </a>
+          <div align="center" class="thumbnail embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item">
+              <source src="video/floating.mp4" type="video/mp4">
+            </video>
+            <span class="textoverlay" style="left:200px;top:135px;">Floating Boards</span>
+          </div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-6">
-          <a href="#" class="thumbnail text-center launch-modal" data-modal-id="steps-video">
-            <img src="video/steps.png">
-            <span class="textoverlay">Devil's Steps</span>
-          </a>
+          <div align="center" class="thumbnail embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item">
+              <source src="video/steps.mp4" type="video/mp4">
+            </video>
+            <span class="textoverlay" style="left:200px;top:135px;">Devil's Steps</span>
+          </div>
         </div>
         <div class="col-xs-6">
-          <a href="#" class="thumbnail text-center launch-modal" data-modal-id="jungle-video" data-video="jungle.mp4">
-            <img src="video/jungle.png">
-            <span class="textoverlay">Rope Jungle</span>
-          </a>
+          <div align="center" class="thumbnail embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item">
+              <source src="video/jungle.mp4" type="video/mp4">
+            </video>
+            <span class="textoverlay" style="left:200px;top:135px;">Rope Jungle</span>
+          </div>
         </div>
       </div>
 <div class="row text-center">
@@ -91,7 +96,7 @@
             <div class="modal-video">
               <div class="embed-responsive embed-responsive-16by9">
                 <video class="embed-responsive-item" id="introVid">
-                    <source src="file:///sdcard/ninja/video/intro.mp4">
+                    <source src="video/intro.mp4">
                 </video>
               </div>
             </div>
@@ -197,8 +202,18 @@
 
     <script>
     $('video').click(function(){
-      $(this).get(0).play()
-      });
+      $(this).next().css("display","none");
+      $(this).get(0).play();
+    });
+
+    $('.textoverlay').click(function(){
+      $(this).css("display","none");
+      $(this).prev().get(0).play();
+    });
+
+    $('video').on('ended',function(){
+        $(this).next().css("display","block");
+    });
 
       $('.launch-modal').on('click', function(e){
       e.preventDefault();
