@@ -8,6 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
     <title>Discovery Ninja Warrior</title>
 
@@ -32,18 +33,21 @@
           <p style="font-size:25px;">Do you have what it takes to be a Discovery Ninja Warrior? <br /><br  />Click the videos to see demonstrations of the obstacles.</p>
         </div>
         <div class="col-xs-6">
-          <a href="#" class="thumbnail text-center launch-modal" data-modal-id="intro-video">
-            <img src="video/intro.png">
+          <div align="center" class="embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item">
+              <source src="video/cliffhanger.mp4" type="video/mp4">
+            </video>
             <span class="textoverlay" style="left:200px;top:135px;">Introduction</span>
-          </a>
+          </div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-3">
-          <video class="embed-responsive-item" id="floatingVid" controls>
-              <source src="video/floating.mp4">
-          </video>
+          <a href="#" class="thumbnail text-center launch-modal" data-modal-id="cliff-video">
+            <img src="video/cliffhanger.png">
+            <span class="textoverlay">Cliff Hanger</span>
+          </a>
         </div>
         <div class="col-xs-3">
           <a href="#" class="thumbnail text-center launch-modal" data-modal-id="floating-video">
@@ -85,7 +89,7 @@
             <div class="modal-video">
               <div class="embed-responsive embed-responsive-16by9">
                 <video class="embed-responsive-item" id="introVid">
-                    <source src="video/intro.mp4">
+                    <source src="file:///sdcard/ninja/video/intro.mp4">
                 </video>
               </div>
             </div>
@@ -106,7 +110,9 @@
           <div class="modal-body">
             <div class="modal-video">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe id="cartoonVideo" width="560" height="315" src="https://www.youtube.com/watch?v=u-nseJnSul0" frameborder="0" allowfullscreen></iframe>
+                <video class="embed-responsive-item" id="cliffVid">
+                    <source src="video/cliffhanger.mp4">
+                </video>
               </div>
             </div>
           </div>
