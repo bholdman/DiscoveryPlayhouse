@@ -196,6 +196,10 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
+    $('video').click(function(){
+      $(this).get(0).play()
+      });
+
       $('.launch-modal').on('click', function(e){
       e.preventDefault();
       $( '#' + $(this).data('modal-id') ).modal();
