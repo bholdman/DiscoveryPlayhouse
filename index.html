@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Discovery Ninja Warrior</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <!-- <h1>Discovery Ninja Warrior</h1> -->
+      <div class="row">
+        <div class="col-xs-6">
+          <img src="logo.png" class="img-responsive" style="max-width: 250px;float: left;margin-right: 20px;">
+          <p style="font-size:25px;">Do you have what it takes to be a Discovery Ninja Warrior? <br /><br  />Click the videos to see demonstrations of the obstacles.</p>
+        </div>
+        <div class="col-xs-6">
+          <a href="#" class="thumbnail text-center launch-modal" data-modal-id="intro-video">
+            <img src="video/intro.png">
+            <span class="textoverlay" style="left:200px;top:135px;">Introduction</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-3">
+          <a href="#" class="thumbnail text-center launch-modal" data-modal-id="cliff-video">
+            <img src="video/cliffhanger.png">
+            <span class="textoverlay">Cliff Hanger</span>
+          </a>
+        </div>
+        <div class="col-xs-3">
+          <a href="#" class="thumbnail text-center launch-modal" data-modal-id="floating-video">
+            <img src="video/floating.png">
+            <span class="textoverlay" style="left:25px;">Floating Boards</span>
+          </a>
+        </div>
+
+        <div class="col-xs-3">
+          <a href="#" class="thumbnail text-center launch-modal" data-modal-id="steps-video">
+            <img src="video/steps.png">
+            <span class="textoverlay">Devil's Steps</span>
+          </a>
+        </div>
+        <div class="col-xs-3">
+          <a href="#" class="thumbnail text-center launch-modal" data-modal-id="jungle-video" data-video="jungle.mp4">
+            <img src="video/jungle.png">
+            <span class="textoverlay">Rope Jungle</span>
+          </a>
+        </div>
+      </div>
+<div class="row text-center">
+  <p style="font-size:18px;">
+    No running, No horseplay, Obstacles are built for kids only, Only one child on an obstacle at a time.
+  </p>
+</div>
+    </div><!-- /.container -->
+
+    <!-- INTRO MODAL -->
+    <div class="modal fade" id="intro-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-video">
+              <div class="embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" id="introVid">
+                    <source src="video/intro.mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cliff MODAL -->
+    <div class="modal fade" id="cliff-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-video">
+              <div class="embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" id="cliffVid">
+                    <source src="video/cliffhanger.mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating MODAL -->
+    <div class="modal fade" id="floating-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-video">
+              <div class="embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" id="floatingVid">
+                    <source src="video/floating.mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Steps MODAL -->
+    <div class="modal fade" id="steps-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-video">
+              <div class="embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" id="stepsVid">
+                    <source src="video/steps.mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jungle MODAL -->
+    <div class="modal fade" id="jungle-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-video">
+              <div class="embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" id="jungleVid">
+                    <source src="video/jungle.mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $('.launch-modal').on('click', function(e){
+      e.preventDefault();
+      $( '#' + $(this).data('modal-id') ).modal();
+      });
+
+      $('#intro-video').on('hidden.bs.modal', function () {
+        var mediaElement = document.getElementById("introVid");
+        mediaElement.pause();
+        mediaElement.currentTime = 0;
+      })
+
+      $('#intro-video').on('shown.bs.modal', function () {
+        $('#introVid').get(0).play()
+      })
+
+      $('#cliff-video').on('hidden.bs.modal', function () {
+        var mediaElement = document.getElementById("cliffVid");
+        mediaElement.pause();
+        mediaElement.currentTime = 0;
+      })
+
+      $('#cliff-video').on('shown.bs.modal', function () {
+        $('#cliffVid').get(0).play()
+      })
+
+      $('#floating-video').on('hidden.bs.modal', function () {
+        var mediaElement = document.getElementById("floatingVid");
+        mediaElement.pause();
+        mediaElement.currentTime = 0;
+      })
+
+      $('#floating-video').on('shown.bs.modal', function () {
+        $('#floatingVid').get(0).play()
+      })
+
+      $('#steps-video').on('hidden.bs.modal', function () {
+        var mediaElement = document.getElementById("stepsVid");
+        mediaElement.pause();
+        mediaElement.currentTime = 0;
+      })
+
+      $('#steps-video').on('shown.bs.modal', function () {
+        $('#stepsVid').get(0).play()
+      })
+
+      $('#jungle-video').on('hidden.bs.modal', function () {
+        var mediaElement = document.getElementById("jungleVid");
+        mediaElement.pause();
+        mediaElement.currentTime = 0;
+      })
+
+      $('#jungle-video').on('shown.bs.modal', function () {
+        $('#jungleVid').get(0).play()
+      })
+
+      // document.getElementById('video1').addEventListener('ended',endHandler,false);
+      // function endHandler(e) {
+      //   var mediaElement = document.getElementById("video1");
+      //   mediaElement.pause();
+      //   mediaElement.currentTime = 0;
+      //   $('#modal-video').modal('toggle');
+      // }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+.col-xs-3{
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+body{
+  background-color: #161848;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.textoverlay{
+  font-size: 30px;
+  position: absolute;
+  top:55px;
+  left:45px;
+  font-weight: bold;
+  color: #000;
+  opacity: .75;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+.launch-modal{
+  background-color: #9d141c;
+}
+
+/***** Modal *****/
+
+/*.modal-backdrop.in {
+    filter: alpha(opacity=7);
+    opacity: 0.7;
+}
+
+.modal-content {
+    background: none;
+    border: 0;
+    -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+.modal-body {
+    padding: 0 25px 25px 25px;
+}
+
+.modal-header {
+    padding: 25px 25px 15px 25px;
+    text-align: right;
+}
+
+.modal-header, .modal-footer {
+    border: 0;
+}
+
+.modal-header .close {
+    float: none;
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 300;
+    text-shadow: none;
+    opacity: 1;
+}*/
